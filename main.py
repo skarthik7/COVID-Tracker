@@ -14,10 +14,8 @@ def country_summary():
     return x[4:11]
 
 def main():
-    option = 1
-    while option == 1:
-        result = country_summary()
-        for data in result:
-            print("{}:".format(data[0]),data[1])
+    result = country_summary()
+    for data in result:
+        print("{}:".format(data[0]),data[1])
 
 main()
